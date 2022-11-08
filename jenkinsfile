@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Saludar') {
+            steps {
+                echo "Hello World"
+                echo "I am Jean Reyes too"
+                echo "Esta es la corrida Nº ${BUILD_NUMBER}"
+            }
+        }
+    }
+}
